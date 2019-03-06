@@ -3,10 +3,15 @@ package com.converter.numbers.calculating;
 public class DecimalNumber implements Number {
 
     public final NumberSystems type = NumberSystems.decimal;
+    private int value;
+
+    public DecimalNumber(int value) {
+        this.value = value;
+    }
 
     @Override
     public String toDecimal(Number number) {
-        return null;
+        return String.valueOf(value);
     }
 
     @Override

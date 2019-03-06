@@ -3,6 +3,11 @@ package com.converter.numbers.calculating;
 public class OctalNumber implements Number{
 
     public final NumberSystems type = NumberSystems.octal;
+    private int value;
+
+    public OctalNumber(int value) {
+        this.value = value;
+    }
 
     @Override
     public String toDecimal(Number number) {
@@ -16,7 +21,7 @@ public class OctalNumber implements Number{
 
     @Override
     public String toOctal(Number number) {
-        return null;
+        return String.valueOf(value);
     }
 
     @Override

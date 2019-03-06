@@ -1,16 +1,13 @@
 package com.converter.numbers.application;
 
+import com.converter.numbers.GUI.ControlPanel;
+
 public class ApplicationController {
-    private static ApplicationController instance = null;
 
-    public static ApplicationController getInstance() {
-        if (instance == null)
-            instance = new ApplicationController();
+    ControlPanel panel;
 
-        return instance;
-    }
-
-    private ApplicationController() {
+    public ApplicationController(ControlPanel panel) {
+        this.panel = panel;
     }
 
     public void convert() {

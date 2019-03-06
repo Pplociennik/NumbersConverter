@@ -3,6 +3,11 @@ package com.converter.numbers.calculating;
 public class BinaryNumber implements Number {
 
     public final NumberSystems type = NumberSystems.binary;
+    private String value;
+
+    public BinaryNumber(String value) {
+        this.value = value;
+    }
 
     @Override
     public String toDecimal(Number number) {
@@ -11,7 +16,7 @@ public class BinaryNumber implements Number {
 
     @Override
     public String toBinary(Number number) {
-        return null;
+        return value;
     }
 
     @Override
