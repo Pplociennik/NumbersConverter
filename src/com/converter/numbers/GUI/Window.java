@@ -9,6 +9,7 @@ public class Window extends JFrame {
         setSize(new Dimension(width, height));
         setTitle(title);
         setResizable(false);
+        setLayout(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         ControlPanel panel = new ControlPanel();
