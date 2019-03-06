@@ -1,8 +1,8 @@
 package com.converter.numbers.calculating;
 
-public class BinaryNumber implements Number {
+public class HexadecimalNumber implements Number{
 
-    public final NumberSystems type = NumberSystems.binary;
+    public final NumberSystems type = NumberSystems.hexadecimal;
 
     @Override
     public String toDecimal(Number number) {
@@ -24,4 +24,3 @@ public class BinaryNumber implements Number {
         return null;
     }
 }
-
