@@ -10,22 +10,22 @@ public class DecimalNumber implements Number {
     }
 
     @Override
-    public String toDecimal(Number number) {
+    public String toDecimal() {
         return String.valueOf(value);
     }
 
     @Override
-    public String toBinary(Number number) {
+    public String toBinary() {
         return null;
     }
 
     @Override
-    public String toOctal(Number number) {
+    public String toOctal() {
         return null;
     }
 
     @Override
-    public String toHexadecimal(Number number) {
+    public String toHexadecimal() {
         return null;
     }
 }
