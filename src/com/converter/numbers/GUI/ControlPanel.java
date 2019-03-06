@@ -1,11 +1,14 @@
 package com.converter.numbers.GUI;
 
+import com.converter.numbers.application.ApplicationController;
 import com.converter.numbers.application.Converter;
 
 import javax.swing.*;
 import java.awt.*;
 
 public class ControlPanel extends JPanel {
+
+    private ApplicationController controller = ApplicationController.getInstance();
 
     public ControlPanel() {
         setSize(new Dimension(Converter.WIDTH, Converter.HEIGHT));
