@@ -15,7 +15,7 @@ public class HexadecimalNumber implements Number{
     }
 
     @Override
-    public String toBinary() {
+    public byte[] toBinary() {
         return null;
     }
 

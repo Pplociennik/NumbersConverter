@@ -4,7 +4,7 @@ public interface Number {
 
     public String toDecimal();
 
-    public String toBinary();
+    public byte[] toBinary();
 
     public String toOctal();
 

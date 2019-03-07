@@ -3,9 +3,9 @@ package com.converter.numbers.calculating;
 public class BinaryNumber implements Number {
 
     public final NumberSystems type = NumberSystems.binary;
-    private String value;
+    private byte[] value;
 
-    public BinaryNumber(String value) {
+    public BinaryNumber(byte[] value) {
         this.value = value;
     }
 
@@ -15,7 +15,7 @@ public class BinaryNumber implements Number {
     }
 
     @Override
-    public String toBinary() {
+    public byte[] toBinary() {
         return value;
     }
 
