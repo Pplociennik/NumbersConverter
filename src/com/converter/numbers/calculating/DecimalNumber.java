@@ -26,7 +26,7 @@ public class DecimalNumber implements Number {
             value = value / 2;
 
             CONSOLE.append("\n\nWartość dziesiętna w danym stanie: " + value);
-            CONSOLE.append("\n\nBudowa liczby binarnej: " + binaryResult + "\n\n");
+            CONSOLE.append("\n\nBudowa liczby binarnej: " + new StringBuilder(binaryResult).reverse().toString() + "\n\n");
         }
         CONSOLE.append("\n\n------------------------------------------------------------------------------------\n\n");
 
