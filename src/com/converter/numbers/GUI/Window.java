@@ -1,5 +1,7 @@
 package com.converter.numbers.GUI;
 
+import com.converter.numbers.application.Converter;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -26,16 +28,17 @@ public class Window extends JFrame {
         console = new JTextArea(1, 25);
         //console.setLineWrap(true);
         console.append("Witaj w przeliczniku systemów liczbowych!\n\nZacznij działać!\n\n- > Wybierz system\n- > Wpisz liczbę w tym systemie\n- > Kliknij przycisk Konwertuj!\n\n< - > Gotowe! :)");
+        console.setRows(15);
         console.setEditable(false);
 
         scrollConsole = new JScrollPane (console,
-                JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+                JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
         panel = new ControlPanel(this);
 
-        add(scrollPane, BorderLayout.LINE_START);
+        add(scrollPane, BorderLayout.WEST);
         add(panel, BorderLayout.CENTER);
-        add(scrollConsole, BorderLayout.LINE_END);
+        add(scrollConsole, BorderLayout.SOUTH);
         setVisible(true);
     }
 }

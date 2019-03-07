@@ -9,4 +9,8 @@ public interface Number {
     public String toOctal();
 
     public String toHexadecimal();
+
+    public String toString();
+
+    public String getValue();
 }

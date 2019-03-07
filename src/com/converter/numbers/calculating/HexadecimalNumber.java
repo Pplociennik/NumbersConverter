@@ -28,4 +28,9 @@ public class HexadecimalNumber implements Number{
     public String toHexadecimal() {
         return value;
     }
+
+    @Override
+    public String getValue() {
+        return String.valueOf(value);
+    }
 }

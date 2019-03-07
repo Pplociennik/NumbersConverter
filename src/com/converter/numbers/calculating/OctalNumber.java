@@ -28,4 +28,9 @@ public class OctalNumber implements Number{
     public String toHexadecimal() {
         return null;
     }
+
+    @Override
+    public String getValue() {
+        return String.valueOf(value);
+    }
 }

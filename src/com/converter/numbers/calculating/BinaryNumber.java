@@ -9,6 +9,10 @@ public class BinaryNumber implements Number {
         this.value = value;
     }
 
+    public BinaryNumber(String value) {
+        this.value = value.getBytes();
+    }
+
     @Override
     public String toDecimal() {
         return null;
@@ -27,6 +31,11 @@ public class BinaryNumber implements Number {
     @Override
     public String toHexadecimal() {
         return null;
+    }
+
+    @Override
+    public String getValue() {
+        return new String(value);
     }
 }
 
