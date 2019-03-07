@@ -9,7 +9,7 @@ public class Window extends JFrame {
 
     public JList jList;
     public JScrollPane scrollPane;
-    public JTextArea console;
+    public static JTextArea console;
     public JScrollPane scrollConsole;
     public ControlPanel panel;
 

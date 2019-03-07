@@ -19,8 +19,8 @@ public class BinaryNumber implements Number {
     }
 
     @Override
-    public byte[] toBinary() {
-        return value;
+    public String toBinary() {
+        return String.valueOf(value);
     }
 
     @Override

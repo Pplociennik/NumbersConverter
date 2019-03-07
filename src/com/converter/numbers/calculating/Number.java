@@ -1,10 +1,16 @@
 package com.converter.numbers.calculating;
 
+import com.converter.numbers.GUI.Window;
+
+import javax.swing.*;
+
 public interface Number {
+
+    final JTextArea CONSOLE = Window.console;
 
     public String toDecimal();
 
-    public byte[] toBinary();
+    public String toBinary();
 
     public String toOctal();
 

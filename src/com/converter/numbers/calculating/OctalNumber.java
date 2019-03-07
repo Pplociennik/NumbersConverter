@@ -15,7 +15,7 @@ public class OctalNumber implements Number{
     }
 
     @Override
-    public byte[] toBinary() {
+    public String toBinary() {
         return null;
     }
 

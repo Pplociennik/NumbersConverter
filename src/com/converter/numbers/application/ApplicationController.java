@@ -22,6 +22,10 @@ public class ApplicationController {
 
         window.console.append("Utworzono obiekt: " + number + "\n\n");
         window.console.append("Wartość: " + number.getValue() + "\n\n");
+        window.console.append("Wartość binarna: " + number.toBinary() + "\n\n");
+        window.console.append("Wartość dziesiętna: " + number.toDecimal() + "\n\n");
+        window.console.append("Wartość ósemkowa: " + number.toOctal() + "\n\n");
+        window.console.append("Wartość szesnastkowa: " + number.toHexadecimal() + "\n\n");
 
     }
 
