@@ -1,12 +1,25 @@
 package com.converter.numbers.calculating;
 
+import com.converter.numbers.exceptions.NoTypeException;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class BinaryNumber implements Number {
 
     public final ID type = ID.binary;
     private String value;
 
+    private Pattern pattern = Pattern.compile("[0-1]");
+    Matcher matcher;
+
     public BinaryNumber(String value) {
-        this.value = value;
+        matcher = pattern.matcher(value);
+
+        if (matcher.matches())
+            this.value = value;
+        else
+            throw new NoTypeException("Zły typ!");
     }
 
     @Override
