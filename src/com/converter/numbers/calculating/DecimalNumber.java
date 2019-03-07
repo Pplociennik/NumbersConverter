@@ -18,7 +18,7 @@ public class DecimalNumber implements Number {
     public String toBinary() {
 
         CONSOLE.append("\n\n------------------------------------------------------------------------------------\n\n");
-
+        CONSOLE.append("Obliczanie wartości binarnej: ");
         String binaryResult = "";
 
         while (value > 0) {
@@ -30,7 +30,7 @@ public class DecimalNumber implements Number {
         }
         CONSOLE.append("\n\n------------------------------------------------------------------------------------\n\n");
 
-        return binaryResult;
+        return new StringBuilder(binaryResult).reverse().toString();
     }
 
     @Override
