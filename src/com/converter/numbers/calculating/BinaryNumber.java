@@ -10,8 +10,8 @@ public class BinaryNumber implements Number {
     public final ID type = ID.binary;
     private String value;
 
-    private Pattern pattern = Pattern.compile("[0-1]");
-    Matcher matcher;
+    private Pattern pattern = Pattern.compile("[0-1]*");
+    private Matcher matcher;
 
     public BinaryNumber(String value) {
         matcher = pattern.matcher(value);
