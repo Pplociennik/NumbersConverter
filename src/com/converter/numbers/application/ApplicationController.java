@@ -4,6 +4,7 @@ import com.converter.numbers.GUI.ControlPanel;
 import com.converter.numbers.GUI.Window;
 import com.converter.numbers.calculating.*;
 import com.converter.numbers.calculating.Number;
+import com.converter.numbers.exceptions.NoTypeException;
 
 public class ApplicationController {
 
@@ -36,16 +37,21 @@ public class ApplicationController {
 
     private Number createNumberObject(String type, String value) {
 
-        switch (type) {
-            case "Decimal":
-                return new DecimalNumber(Integer.valueOf(value));
-            case "Binary":
-                return new BinaryNumber(value);
-            case "Octal":
-                return new OctalNumber(Integer.valueOf(value));
-            case "Hexadecimal":
-                return new HexadecimalNumber(value);
+        try {
+            switch (type) {
+                case "Decimal":
+                    return new DecimalNumber(Integer.valueOf(value));
+                case "Binary":
+                    return new BinaryNumber(value);
+                case "Octal":
+                    return new OctalNumber(Integer.valueOf(value));
+                case "Hexadecimal":
+                    return new HexadecimalNumber(value);
+            }
+        } catch (NumberFormatException | NullPointerException e) {
+            throw new NoTypeException("Zły typ!");
         }
         return null;
+
     }
 }

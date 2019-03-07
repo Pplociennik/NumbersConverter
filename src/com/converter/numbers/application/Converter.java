@@ -1,6 +1,7 @@
 package com.converter.numbers.application;
 
 import com.converter.numbers.GUI.Window;
+import com.converter.numbers.calculating.Number;
 
 public class Converter {
 
@@ -10,5 +11,7 @@ public class Converter {
 
     public static void main(String[] args) {
         new Window(WIDTH, HEIGHT, WINDOW_TITLE);
+
+
     }
 }

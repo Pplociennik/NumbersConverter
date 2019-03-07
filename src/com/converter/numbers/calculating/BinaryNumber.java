@@ -37,7 +37,23 @@ public class BinaryNumber implements Number {
 
     @Override
     public String toOctal() {
-        return null;
+        CONSOLE.append("\n\n------------------------------------------------------------------------------------\n\n");
+        CONSOLE.append("Obliczanie wartości ósemkowej: ");
+
+        int max = this.value.length() - 1;
+        int octalResult = 0;
+        int index = 0;
+        String binary = this.value;
+
+        while (max >= 0) {
+            octalResult += Integer.parseInt(binary.substring(index, index + 1)) * Math.pow(8, max);
+            index++;
+            max--;
+            CONSOLE.append("\n\nKrok: " + index + "\n\nWynik: " + octalResult);
+        }
+        CONSOLE.append("\n\n------------------------------------------------------------------------------------\n\n");
+
+        return String.valueOf(octalResult);
     }
 
     @Override
