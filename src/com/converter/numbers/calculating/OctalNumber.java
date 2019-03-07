@@ -2,7 +2,7 @@ package com.converter.numbers.calculating;
 
 public class OctalNumber implements Number{
 
-    public final NumberSystems type = NumberSystems.octal;
+    public final ID type = ID.octal;
     private int value;
 
     public OctalNumber(int value) {

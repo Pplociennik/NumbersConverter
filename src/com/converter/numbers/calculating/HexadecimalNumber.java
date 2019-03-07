@@ -2,7 +2,7 @@ package com.converter.numbers.calculating;
 
 public class HexadecimalNumber implements Number{
 
-    public final NumberSystems type = NumberSystems.hexadecimal;
+    public final ID type = ID.hexadecimal;
     private String value;
 
     public HexadecimalNumber(String value) {

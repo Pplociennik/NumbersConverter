@@ -1,6 +1,6 @@
 package com.converter.numbers.calculating;
 
-public enum NumberSystems {
+public enum ID {
     decimal(),
     binary(),
     octal(),

@@ -2,7 +2,7 @@ package com.converter.numbers.calculating;
 
 public class DecimalNumber implements Number {
 
-    public final NumberSystems type = NumberSystems.decimal;
+    public final ID type = ID.decimal;
     private int value;
 
     public DecimalNumber(int value) {

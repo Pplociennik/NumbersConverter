@@ -2,7 +2,7 @@ package com.converter.numbers.calculating;
 
 public class BinaryNumber implements Number {
 
-    public final NumberSystems type = NumberSystems.binary;
+    public final ID type = ID.binary;
     private byte[] value;
 
     public BinaryNumber(byte[] value) {
