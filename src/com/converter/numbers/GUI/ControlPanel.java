@@ -10,8 +10,11 @@ import java.awt.*;
 public class ControlPanel extends JPanel {
 
     private ApplicationController controller;
+    private Window parent;
 
-    public ControlPanel() {
+    public ControlPanel(Window parent) {
+
+        this.parent = parent;
 
         setSize(new Dimension(Converter.WIDTH, Converter.HEIGHT));
         setLayout(null);
@@ -27,6 +30,6 @@ public class ControlPanel extends JPanel {
         add(input);
         add(convertButton);
 
-        this.controller = new ApplicationController(this);
+        this.controller = new ApplicationController(this, this.parent);
     }
 }
