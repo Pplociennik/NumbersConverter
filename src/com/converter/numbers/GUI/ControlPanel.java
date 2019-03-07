@@ -5,7 +5,6 @@ import com.converter.numbers.application.Converter;
 
 import javax.swing.*;
 import java.awt.*;
-import javax.swing.DefaultListModel;
 
 
 public class ControlPanel extends JPanel {
