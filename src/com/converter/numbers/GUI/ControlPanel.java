@@ -27,16 +27,16 @@ public class ControlPanel extends JPanel {
         this.parent = parent;
 
         this.decResult = new JLabel("Decimal: ");
-        decResult.setBounds(400, 30, 100, 20);
+        decResult.setBounds(400, 30, 1000, 20);
 
         this.binResult = new JLabel("Binary: ");
-        binResult.setBounds(400, 70, 100, 20);
+        binResult.setBounds(400, 70, 1000, 20);
 
         this.octResult = new JLabel("Octal: ");
-        octResult.setBounds(400, 110, 100, 20);
+        octResult.setBounds(400, 110, 1000, 20);
 
         this.hexResult = new JLabel("Hexadecimal: ");
-        hexResult.setBounds(400, 150, 100, 20);
+        hexResult.setBounds(400, 150, 1000, 20);
 
         setSize(new Dimension(Converter.WIDTH, Converter.HEIGHT));
         setLayout(null);
