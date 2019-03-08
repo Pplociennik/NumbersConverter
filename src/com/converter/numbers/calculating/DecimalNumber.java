@@ -30,6 +30,7 @@ public class DecimalNumber implements Number {
         }
         CONSOLE.append("\n\n------------------------------------------------------------------------------------\n\n");
 
+        
         return new StringBuilder(binaryResult).reverse().toString();
     }
 

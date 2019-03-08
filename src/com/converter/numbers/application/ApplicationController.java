@@ -21,12 +21,22 @@ public class ApplicationController {
         Number number = createNumberObject(window.jList.getSelectedValue().toString(), panel.input.getText());
         clearConsole();
 
+        String decResult = number.toDecimal();
+        String binResult = number.toBinary();
+        String octResult = number.toOctal();
+        String hexResult = number.toHexadecimal();
+
         window.console.append("Utworzono obiekt: " + number + "\n\n");
         window.console.append("Wartość: " + number.getValue() + "\n\n");
-        window.console.append("Wartość binarna: " + number.toBinary() + "\n\n");
-        window.console.append("Wartość dziesiętna: " + number.toDecimal() + "\n\n");
-        window.console.append("Wartość ósemkowa: " + number.toOctal() + "\n\n");
-        window.console.append("Wartość szesnastkowa: " + number.toHexadecimal() + "\n\n");
+        window.console.append("Wartość binarna: " + binResult + "\n\n");
+        window.console.append("Wartość dziesiętna: " + decResult + "\n\n");
+        window.console.append("Wartość ósemkowa: " + octResult + "\n\n");
+        window.console.append("Wartość szesnastkowa: " + hexResult + "\n\n");
+
+        panel.decResult.setText("Decimal: " + decResult);
+        panel.binResult.setText("Binary: " + binResult);
+        panel.octResult.setText("Octal: " + octResult);
+        panel.hexResult.setText("Hexadecimal: " + hexResult);
 
     }
 

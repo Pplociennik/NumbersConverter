@@ -19,6 +19,7 @@ public class Window extends JFrame {
         setResizable(false);
         //setLayout(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationByPlatform(true);
 
         jList = new JList(new String[]{"Decimal", "Binary", "Octal", "Hexadecimal"});
         jList.setSelectedIndex(0);

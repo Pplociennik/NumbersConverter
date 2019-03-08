@@ -6,17 +6,18 @@ import javax.swing.*;
 
 public interface Number {
 
-    final JTextArea CONSOLE = Window.console;
+     final JTextArea CONSOLE = Window.console;
 
-    public String toDecimal();
+     String toDecimal();
 
-    public String toBinary();
+     String toBinary();
 
-    public String toOctal();
+     String toOctal();
 
-    public String toHexadecimal();
+     String toHexadecimal();
 
-    public String toString();
+     String toString();
 
-    public String getValue();
+     String getValue();
+
 }
