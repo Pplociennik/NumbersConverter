@@ -31,8 +31,8 @@ public class Window extends JFrame {
         console.append("Witaj w przeliczniku systemów liczbowych!\n\nZacznij działać!\n\n- > Wybierz system\n- > Wpisz liczbę w tym systemie\n- > Kliknij przycisk Konwertuj!\n\n< - > Gotowe! :)");
         console.setRows(15);
         console.setEditable(false);
-        console.setBackground(Color.LIGHT_GRAY);
-        console.setForeground(Color.DARK_GRAY);
+        console.setBackground(Color.BLACK);
+        console.setForeground(Color.WHITE);
 
         scrollConsole = new JScrollPane (console,
                 JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
